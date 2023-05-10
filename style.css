@@ -33,8 +33,25 @@ article {
 }
 
 article div {
-  text-align: center;
+  /* Replaced text-align center here earlier */
   width: 100%;
+  padding: 5px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+.main-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.portfolio-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
 }
 
 /* Paragraphs */
@@ -51,13 +68,18 @@ a:hover {
   color: #f77f00;
 }
 
+nav {
+  padding-top: 32px;
+  margin-left: 10px;
+}
+
 nav a {
   padding-left: 20px;
 }
 
 /* Images */
 img {
-  width: 100%;
+  /* width: 100%; */
   max-width: 200px;
   height: auto;
 }
@@ -65,6 +87,8 @@ img {
 .image-circle {
   border: 2px solid #003049;
   border-radius: 50%;
+  display: flex;
+  justify-content: flex-start;
 }
 
 /* Footer */
